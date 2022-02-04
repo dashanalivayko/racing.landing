@@ -39,6 +39,11 @@ export const NFTSectionStyles = makeStyles<Theme>((theme: Theme) => ({
             textAlign: 'center',
             color: '#000000',
         },
+        '& > img': {
+            width: '320px',
+            height: '320px',
+            borderRadius: '10px',
+        },
     },
 
 }
