@@ -3,7 +3,6 @@ import React from 'react';
 import { DiscordButton, TwitterButton } from '../buttons/socialButtons';
 import play from '../../media/Play.png';
 
-
 interface Props {
 }
 
@@ -14,7 +13,7 @@ const About: React.FC<Props> = ({}) => {
   console.log(played)
 
   const handlePlayedClick = () => {
-    const video: HTMLVideoElement | null = document.querySelector('video');
+    const video: HTMLVideoElement | null = document.getElementById('video');
     played ? video.pause() : video.play();
     setPlayed(!played);
   };
@@ -35,7 +34,7 @@ const About: React.FC<Props> = ({}) => {
         <div className={styles.video}>
           <img src={play.src} style={{visibility: played ? 'hidden' : 'visible'}} onClick={handlePlayedClick} alt="play"/>
           <div style={{visibility: played ? 'hidden' : 'visible'}} />
-          <video loop muted onClick={handlePlayedClick} autoPlay onEnded={onEndedCallback}>
+          <video id="video" autoPlay onClick={handlePlayedClick} onEnded={onEndedCallback}>
             <source src='https://s3.eu-north-1.amazonaws.com/funn.chat/misc/TprVideo.mp4' type="video/mp4" />
           </video>
         </div>
