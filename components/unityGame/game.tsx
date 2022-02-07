@@ -1,6 +1,6 @@
 import { GameStyles } from './game.style';
 import React from 'react';
-import { UnityPage } from '../../unity/unityPage';
+import { UnityPage } from '../../public/unity/unityPage';
 
 
 interface Props {
