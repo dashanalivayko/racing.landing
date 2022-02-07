@@ -10,6 +10,7 @@ animation: {
     backgroundRepeatX: 'initial',
     width: '100%',
     height: '520px',
+    position: 'relative',
 },
 car: {
     width: '520px',

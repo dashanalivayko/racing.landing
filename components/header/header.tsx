@@ -10,14 +10,14 @@ const Header: React.FC = () => {
     return (
       <nav className={styles.header} role="navigation">
         <a href="#top" className={styles.logo}>
-          <Image src={logo}/>
+          <Image src={logo} alt="logo"/>
         </a>
         <div className={styles.navbar}>
           <a href="#about">GAME</a>
           <a href="#roadmap">ROADMAP</a>
           <a href="#faq">FAQ</a>
           <a href="#team">TEAM</a>
-          <a href="https://docs.google.com/document/d/1PToRBirF1Wz76BGd0Lbjiu9MJeoOIBBgZUNQB5FpMfA/edit#heading=h.uu8b8n2rwtmo" target="_blank">WHITEPAPER</a>
+          <a href="https://docs.google.com/document/d/1PToRBirF1Wz76BGd0Lbjiu9MJeoOIBBgZUNQB5FpMfA/edit#heading=h.uu8b8n2rwtmo" target="_blank" rel="noreferrer">WHITEPAPER</a>
           <a href="" target="_blank">RARITY</a>
         </div>
         <div className={styles.buttons}>

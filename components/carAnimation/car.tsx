@@ -12,7 +12,9 @@ const Car: React.FC<Props> = ({}) => {
 
     return (
     <div className={styles.animation}>
-      <img className={styles.car} src={car.src} alt="car"/>
+      <div className={styles.car}>
+        <Image layout='fill' src={car.src} alt="car"/>
+      </div>
     </div>
     );
   };

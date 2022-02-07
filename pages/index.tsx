@@ -22,12 +22,10 @@ const Home: React.FC<Props> = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.2.0/video-js.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.2.0/video.js"></script>
       </Head>
 
       <div className={global.root}>
-         <video width='100%' autoPlay loop muted>
+         <video width='100%' muted autoPlay loop>
            <source src='https://s3.eu-north-1.amazonaws.com/funn.chat/misc/TprVideo.mp4' type="video/mp4" />
          </video>
          <div className={global.shadow}></div>

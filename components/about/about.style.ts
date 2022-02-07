@@ -51,7 +51,7 @@ export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
             width: '620px',
             borderRadius: '10px',
         },
-        '& > img': {
+        '& > .img': {
             width: '140px',
             height: '140px',
             position: 'absolute',
@@ -59,6 +59,7 @@ export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
             top: '50%',
             transform: 'translate(-50%, -50%)',
             left: '50%',
+            background: 'transparent',
         },
         '& > div': {
            background : 'rgba(0, 0, 0, 0.3)',
