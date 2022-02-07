@@ -1,7 +1,7 @@
 import { AboutStyles } from './about.style';
 import React from 'react';
 import { DiscordButton, TwitterButton } from '../buttons/socialButtons';
-import play from '../../media/PLay.png';
+import play from '../../media/Play.png';
 
 
 interface Props {
@@ -33,7 +33,7 @@ const About: React.FC<Props> = ({}) => {
         </div>
         </div>
         <div className={styles.video}>
-          <img src={play.src} style={{visibility: played ? 'hidden' : 'visible'}} onClick={handlePlayedClick} />
+          <img src={play.src} style={{visibility: played ? 'hidden' : 'visible'}} onClick={handlePlayedClick} alt="play"/>
           <div style={{visibility: played ? 'hidden' : 'visible'}} />
           <video loop muted onClick={handlePlayedClick} autoPlay onEnded={onEndedCallback}>
             <source src='https://s3.eu-north-1.amazonaws.com/funn.chat/misc/TprVideo.mp4' type="video/mp4" />

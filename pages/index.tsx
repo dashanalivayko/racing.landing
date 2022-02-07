@@ -18,7 +18,7 @@ const Home: React.FC<Props> = () => {
   return (
     <>
       <Head>
-        <title>l;kjnhbgvf</title>
+        <title>Racing</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet" />

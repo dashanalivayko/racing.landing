@@ -1,4 +1,4 @@
-import { fontFamily } from './../../styles/theme';
+import { fontFamily } from '../../styles/theme';
 import { makeStyles } from '@material-ui/core/styles';
 import { Theme } from '@material-ui/core';
 
@@ -25,11 +25,6 @@ export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
     padding: '18px 30px',
     flexShrink: 0,
     transition: 'ease-out 0.3s',
-    // '& > a': {
-    //     height: '100%',
-    //     width: '100%',
-    //     display: 'block',
-    // },
     '&:hover': {
       boxShadow: 'inset 0px -8px 0px #bfb615, inset 0px -30px 0px #eddd1c',
       background: '#fff989',
@@ -46,10 +41,10 @@ export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
         borderRadius: '5px',
     },
     '&.discord': {
-        backgroundImage: `url(${discord.src}) !important`,
+        backgroundImage: `url(${discord}) !important`,
     },
     '&.twitter': {
-        backgroundImage: `url(${twitter.src}) !important`,
+        backgroundImage: `url(${twitter}) !important`,
       },
   }
 }));
