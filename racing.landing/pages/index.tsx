@@ -25,16 +25,23 @@ const Home: React.FC<Props> = () => {
       </Head>
 
       <div className={global.root}>
+         <video width='100%' autoPlay loop muted>
+           <source src='https://s3.eu-north-1.amazonaws.com/funn.chat/misc/TprVideo.mp4' type="video/mp4" />
+         </video>
+         <div className={global.shadow}></div>
+         <div className={global.main}>
          <Header/>
-         <div className={global.wrapper}>
-            <Banner />
-            <Game />
-            <About />
-          </div>
-          <Car />
-          <div style={{background: '#F3EB5A', width: '100%', justifyContent: 'center', display: 'flex'}}>
+         
             <div className={global.wrapper}>
-              <NFTSection />
+              <Banner />
+              <Game />
+              <About />
+            </div>
+            <Car />
+            <div style={{background: '#F3EB5A', width: '100%', justifyContent: 'center', display: 'flex'}}>
+              <div className={global.wrapper}>
+                <NFTSection />
+              </div>
             </div>
           </div>
       </div>

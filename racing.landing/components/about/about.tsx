@@ -1,13 +1,26 @@
 import { AboutStyles } from './about.style';
 import React from 'react';
 import { DiscordButton, TwitterButton } from '../buttons/socialButtons';
-// import video from '../../public/images/Video.mp4';
+import play from '../../media/Play.png';
+import poster from '../../media/poster.png';
+
 
 interface Props {
 }
 
 const About: React.FC<Props> = ({}) => {
   const styles = AboutStyles();
+
+  const [played, setPlayed] = React.useState(false);
+  console.log(played)
+
+  const handlePlayedClick = () => {
+    const video: HTMLVideoElement | null = document.querySelector('video');
+    played ? video.pause() : video.play();
+    setPlayed(!played);
+  };
+
+  const onEndedCallback = () => setPlayed(!played);
 
     return (
      <div id="about" className={styles.about_section}>
@@ -20,9 +33,13 @@ const About: React.FC<Props> = ({}) => {
             <TwitterButton style={{width: '55px', height: '55px'}} />
         </div>
         </div>
-        <video autoPlay loop>
-          <source src='../../public/images/Video.mp4' type="video/mp4" />
-        </video>
+        <div className={styles.video}>
+          <img src={play.src} style={{visibility: played ? 'hidden' : 'visible'}} onClick={handlePlayedClick} />
+          <div style={{visibility: played ? 'hidden' : 'visible'}} />
+          <video loop muted onClick={handlePlayedClick} autoPlay onEnded={onEndedCallback}>
+            <source src='https://s3.eu-north-1.amazonaws.com/funn.chat/misc/TprVideo.mp4' type="video/mp4" />
+          </video>
+        </div>
     </div>
     );
   };

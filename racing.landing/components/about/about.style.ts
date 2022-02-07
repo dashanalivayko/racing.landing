@@ -7,10 +7,6 @@ export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
     about_section: {
         display: 'flex',
         flexDirection: 'row',
-        '& > video': {
-            width: '620px',
-            height: '360px',
-        }
     },
     about: {
         width: '640px',
@@ -48,5 +44,29 @@ export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
             },
         }        
     },
+    video: {
+        position: 'relative',
+        height: '100%',
+        '& > video': {
+            width: '620px',
+            borderRadius: '10px',
+        },
+        '& > img': {
+            width: '140px',
+            height: '140px',
+            position: 'absolute',
+            zIndex: 1,
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+            left: '50%',
+        },
+        '& > div': {
+           background : 'rgba(0, 0, 0, 0.3)',
+           height: '98%',
+           width: '100%',
+           position: 'absolute',
+           borderRadius: '10px',
+        },
+    }
 }
 ));
