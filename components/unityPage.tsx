@@ -5,10 +5,10 @@ import poster from '../media/poster.png';
 import { fontFamily } from '../styles/theme';
 
 const unityContext = new UnityContext({
-  loaderUrl: 'unity/Build/TPR_proto_1.0.8.loader.js',
-  dataUrl: 'unity/Build/TPR_proto_1.0.8.data',
-  frameworkUrl: 'unity/Build/TPR_proto_1.0.8.framework.js',
-  codeUrl: 'unity/Build/TPR_proto_1.0.8.wasm',
+  loaderUrl: 'unity/Build/TPR_proto_1.0.11.loader.js',
+  dataUrl: 'unity/Build/TPR_proto_1.0.11.data',
+  frameworkUrl: 'unity/Build/TPR_proto_1.0.11.framework.js',
+  codeUrl: 'unity/Build/TPR_proto_1.0.11.wasm',
   webglContextAttributes: {
     preserveDrawingBuffer: true,
   },
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${poster.src})`,
     borderRadius: '20px',
     display: 'flex',
+    backgroundPosition: 'center',
   },
   unityCanvas: {
     width: '100%',

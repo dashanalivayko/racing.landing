@@ -15,14 +15,14 @@ export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
     fontFamily: fontFamily,
     fontStyle: 'normal',
     fontWeight: 900,
-    fontSize: '32px',
+    fontSize: '28px',
     lineHeight: '28px',
     textAlign: 'center',
     textTransform: 'uppercase',
     color: '#FFFFFF',
     textStroke: '1px #74011D',
     textShadow: '0px 1.5px 0px #FF611F',
-    padding: '18px 30px',
+    padding: '13px 30px',
     flexShrink: 0,
     transition: 'ease-out 0.3s',
     '&:hover': {
@@ -33,8 +33,8 @@ export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
   social: {
     transition: 'ease-out 0.1s',
       display: 'block',
-      width: '48px',
-      height: '48px',
+      width: '35px',
+      height: '35px',
       backgroundRepeat: 'no-repeat',
     '&:hover': {
         background: '#F3EB5A',

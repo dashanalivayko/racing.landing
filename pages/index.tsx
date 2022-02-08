@@ -25,7 +25,7 @@ const Home: React.FC<Props> = () => {
       </Head>
 
       <div className={global.root}>
-         <video width='100%' muted autoPlay loop>
+         <video width='100%' muted autoPlay loop style={{marginTop: '-70px'}}> 
            <source src='https://s3.eu-north-1.amazonaws.com/funn.chat/misc/TprVideo.mp4' type="video/mp4" />
          </video>
          <div className={global.shadow}></div>

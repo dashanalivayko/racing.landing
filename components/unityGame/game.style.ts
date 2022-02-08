@@ -5,8 +5,8 @@ export const GameStyles = makeStyles<Theme>((theme: Theme) => ({
 game: {
     border: '10px solid #644200',
     borderRadius: '30px',
-    width: '1210px',
-    height: '680px',
+    width: '1080px',
+    height: '616px',
     margin: '100px 0',
 }
 }

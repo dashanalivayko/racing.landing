@@ -6,7 +6,7 @@ export const headerStyles = makeStyles<Theme>((theme: Theme) => ({
   header: {
     width: '100%',
     display: 'flex',
-    padding: '15px 50px',
+    padding: '10px 50px',
     alignItems: 'center',
     position: 'fixed',
     top: 0,
@@ -15,8 +15,8 @@ export const headerStyles = makeStyles<Theme>((theme: Theme) => ({
     zIndex: 5,
   },
   logo: {
-    width: '140px',
-    height: '65px',
+    width: '118px',
+    height: '55px',
     marginRight: '50px',
   },
   navbar: {
@@ -29,7 +29,7 @@ export const headerStyles = makeStyles<Theme>((theme: Theme) => ({
       fontStyle: 'normal',
       fontWeight: '900',
       fontSize: '24px',
-      lineHeight: '38px',
+      lineHeight: '33px',
       transition: 'ease-out 0.2s',
       '&:not(last-child)': {
         marginRight: '25px',
