@@ -12,6 +12,7 @@ body {
     position: relative;
 	background-color: #98B92E;
 	font-family: 'Nunito Sans', sans-serif;
+	height: 100%;
 }
 
 html::-webkit-scrollbar {

@@ -41,10 +41,10 @@ export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
         borderRadius: '5px',
     },
     '&.discord': {
-        backgroundImage: `url(${discord}) !important`,
+        backgroundImage: `url(${discord.src}) !important`,
     },
     '&.twitter': {
-        backgroundImage: `url(${twitter}) !important`,
+        backgroundImage: `url(${twitter.src}) !important`,
       },
   }
 }));

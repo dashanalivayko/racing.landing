@@ -7,13 +7,13 @@ export const NFTSectionStyles = makeStyles<Theme>((theme: Theme) => ({
     nft_section: {
         display: 'flex',
         flexDirection: 'row',
+        margin: '200px 0 150px',
     },
     nft: {
         width: '320px',
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
-        margin: '100px 0',
         '&:not(last-child)': {
             marginRight: '50px',
         },
