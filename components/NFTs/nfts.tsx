@@ -1,8 +1,5 @@
 import { NFTSectionStyles } from './nft.style';
 import React from 'react';
-import characters from '../../media/1_Characters.gif';
-import cars from '../../media/2_Cars.gif';
-import race from '../../media/3_Race.gif';
 import Image from 'next/image';
 import { customLoader } from '../library/helpers';
 
@@ -17,7 +14,7 @@ const NFTSection: React.FC<Props> = ({}) => {
             <div className={styles.nft}>
                 <p className={'title'}>5555 Unique NFTS</p>
                 <div className='img'>
-                  <Image loader={customLoader} layout='fill' src={characters.src} alt="characters"/>
+                  <Image loader={customLoader} layout='fill' src='https://s3.eu-north-1.amazonaws.com/funn.chat/trailer_park_racing/1_Characters.gif' alt="characters"/>
                 </div>
                 <p className={'subtitle'}><b>Redneck NFT</b> collection on the Solana Blockhain</p>
             </div>
@@ -25,7 +22,7 @@ const NFTSection: React.FC<Props> = ({}) => {
             <div className={styles.nft}>
                 <p className={'title'}>And their cars</p>
                 <div className='img'>
-                  <Image loader={customLoader} layout='fill' src={cars.src} alt="cars"/>
+                  <Image loader={customLoader} layout='fill' src='https://s3.eu-north-1.amazonaws.com/funn.chat/trailer_park_racing/2_Cars.gif' alt="cars"/>
                 </div>
                 <p className={'subtitle'}>Holders get <b>free airdrops</b> to ride their cars</p>
             </div>
@@ -33,7 +30,7 @@ const NFTSection: React.FC<Props> = ({}) => {
             <div className={styles.nft}>
                 <p className={'title'}>Go to Race</p>
                 <div className='img'>
-                  <Image loader={customLoader} layout='fill' src={race.src} alt="race"/>
+                  <Image loader={customLoader} layout='fill' src='https://s3.eu-north-1.amazonaws.com/funn.chat/trailer_park_racing/3_Race.gif' alt="race"/>
                 </div>
                 <p className={'subtitle'}><b>Play to Earn</b> in the PVP arena</p>
             </div>
