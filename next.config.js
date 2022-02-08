@@ -17,8 +17,16 @@ module.exports = withImages({
   }
 })
 
-const withVideos = require('next-videos')
-module.exports = withVideos()
+// const withVideos = require('next-videos')
+// module.exports = withVideos(
+//   {
+//     fileExtensions: ["mp4"],
+//     esModule: true,
+//     webpack(config, options) {
+//       return config
+//     }
+//   }
+// )
 
 
 module.exports = {
@@ -28,18 +36,18 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'loader',
           },
         ],
       },
       {
         test: /\.(mp4)$/,
-        loader: 'file'
+        loader: 'loader'
       },
       {
         test: [/\.webm$/, /\.mp4$/, /\.ogv?g$/],
         use: [{
-        loader: 'file-loader'
+        loader: 'loader'
         },
       ]
     }
@@ -49,14 +57,3 @@ module.exports = {
 
 const production = process.env.NODE_ENV === 'production'
 
-module.exports = {
-  assetPrefix: production ? '/racing.landing/' : '',
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' },
-    }
-  },
-}

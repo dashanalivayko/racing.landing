@@ -7,9 +7,11 @@ export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
     about_section: {
         display: 'flex',
         flexDirection: 'row',
+        marginTop: '50px',
+        position: 'relative',
     },
     about: {
-        width: '640px',
+        width: '645px',
         marginRight: '40px',
         '& .title': {
             fontFamily: fontFamily,
@@ -68,6 +70,6 @@ export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
            position: 'absolute',
            borderRadius: '10px',
         },
-    }
+    },
 }
 ));
