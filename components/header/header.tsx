@@ -4,13 +4,14 @@ import logo from '../../media/Logo.png';
 import { DemoButton } from '../buttons/demoButton';
 import Image from 'next/image';
 import { DiscordButton, TwitterButton } from '../buttons/socialButtons';
+import { customLoader } from '../library/helpers';
 
 const Header: React.FC = () => {
   const styles = headerStyles();
     return (
       <nav className={styles.header} role="navigation">
         <a href="#top" className={styles.logo}>
-          <Image src={logo} alt="logo"/>
+          <Image loader={customLoader} src={logo} alt="logo"/>
         </a>
         <div className={styles.navbar}>
           <a href="#about">GAME</a>

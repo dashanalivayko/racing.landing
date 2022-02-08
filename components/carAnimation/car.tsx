@@ -2,6 +2,7 @@ import { CarStyles } from './car.style';
 import React from 'react';
 import Image from 'next/image';
 import car from '../../media/Car.png';
+import { customLoader } from '../library/helpers';
 import tree from '../../media/tree.png';
 
 
@@ -15,7 +16,7 @@ const Car: React.FC<Props> = ({}) => {
     return (
     <div className={styles.animation}>
       {/* <div className={styles.car}>
-        <Image layout='fill' src={car} alt="car"/>
+        <Image loader={customLoader} layout='fill' src={car} alt="car"/>
       </div> */}
     </div>
     );

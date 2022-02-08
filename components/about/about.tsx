@@ -3,6 +3,7 @@ import React from 'react';
 import { DiscordButton, TwitterButton } from '../buttons/socialButtons';
 import play from '../../media/Play.png';
 import Image from 'next/image';
+import { customLoader } from '../library/helpers';
 // import video from '../../public/Video.mp4';
 import tree from '../../media/tree.png';
 
@@ -38,7 +39,7 @@ const About: React.FC<Props> = ({}) => {
         </div>
         <div className={styles.video}>
           <div className='img' style={{visibility: played ? 'hidden' : 'visible'}} onClick={handlePlayedClick}>
-            <Image layout='fill' src={play.src} alt="play"/>
+            <Image loader={customLoader} layout='fill' src={play.src} alt="play"/>
           </div>
           <div style={{visibility: played ? 'hidden' : 'visible'}} />
           <video id="video" autoPlay onClick={handlePlayedClick} onEnded={onEndedCallback}>
