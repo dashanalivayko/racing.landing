@@ -51,4 +51,12 @@ const production = process.env.NODE_ENV === 'production'
 
 module.exports = {
   assetPrefix: production ? '/racing.landing/' : '',
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+    }
+  },
 }
