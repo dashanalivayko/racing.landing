@@ -9,13 +9,18 @@ module.exports = {
 }
 
 const withImages = require('next-images')
+//const withOptimizedImages = require('next-optimized-images');
 module.exports = withImages({
   fileExtensions: ["jpg", "jpeg", "png", "gif", "svg"],
   esModule: true,
   webpack(config, options) {
     return config
-  }
+  },
 })
+/*module.exports = withOptimizedImages({
+  handleImages: ["jpg", "jpeg", "png", "gif", "svg"],
+  imagesFolder: 'media',
+})*/
 
 const withVideos = require('next-videos')
 module.exports = withVideos()
@@ -51,16 +56,7 @@ const production = process.env.NODE_ENV === 'production'
 
 module.exports = {
   assetPrefix: production ? '/racing.landing/' : '',
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' },
-    }
-  },
   images: {
-    loader: 'akamai',
-    path: '',
+    loader: 'custom',
   },
 }
