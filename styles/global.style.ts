@@ -47,6 +47,5 @@ export const GlobalStyles = makeStyles(() => ({
         display: 'flex',
        
     },
-
   }
 ));

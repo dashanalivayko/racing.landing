@@ -17,7 +17,7 @@ export const headerStyles = makeStyles<Theme>((theme: Theme) => ({
   logo: {
     width: '118px',
     height: '55px',
-    marginRight: '50px',
+    marginRight: '30px',
   },
   navbar: {
     display: 'flex',
@@ -28,11 +28,11 @@ export const headerStyles = makeStyles<Theme>((theme: Theme) => ({
       fontFamily: fontFamily,
       fontStyle: 'normal',
       fontWeight: '900',
-      fontSize: '24px',
-      lineHeight: '33px',
+      fontSize: '18px',
+      lineHeight: '25px',
       transition: 'ease-out 0.2s',
-      '&:not(last-child)': {
-        marginRight: '25px',
+      '&:nth-child(-n+7)': {
+        marginRight: '15px',
       },
       '&:hover': {
         color: '#F3EB5A',

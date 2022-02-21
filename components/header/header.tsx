@@ -14,12 +14,15 @@ const Header: React.FC = () => {
           <Image loader={customLoader} src={logo} alt="logo"/>
         </a>
         <div className={styles.navbar}>
-          <a href="#about">GAME</a>
-          <a href="#roadmap">ROADMAP</a>
-          <a href="#faq">FAQ</a>
+          <a href="#video">VIDEO</a>
+          <a href="#gameplay">GAMEPLAY</a>
+          <a href="#nft">NFT</a>
+          <a href="#token">TOKEN</a>
+          <a href="#partners">PARTNERS</a>
           <a href="#team">TEAM</a>
+          <a href="#roadmap">ROADMAP</a>
           <a href="https://docs.google.com/document/d/1PToRBirF1Wz76BGd0Lbjiu9MJeoOIBBgZUNQB5FpMfA/edit#heading=h.uu8b8n2rwtmo" target="_blank" rel="noreferrer">WHITEPAPER</a>
-          <a href="" target="_blank">RARITY</a>
+
         </div>
         <div className={styles.buttons}>
           <DemoButton text={'play demo'}/>

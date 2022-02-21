@@ -6,13 +6,10 @@ import { Theme } from '@material-ui/core';
 export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
     about_section: {
         display: 'flex',
-        flexDirection: 'row',
-        marginTop: '50px',
+        flexDirection: 'column',
+        marginTop: '80px',
         position: 'relative',
-    },
-    about: {
-        width: '645px',
-        marginRight: '40px',
+        alignItems: 'center',
         '& .title': {
             fontFamily: fontFamily,
             fontStyle: 'normal',
@@ -36,12 +33,16 @@ export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
                 color: 'white',
                 fontWeight: 900,
             },
-        }
+        },
+    },
+    about: {
+        width: '645px',
+        marginRight: '40px',
     },
     buttons: {
         display: 'flex',
         '& > a': {
-            '&:not(last-child)': {
+            '&:first-child': {
                marginRight: '20px',
             },
         }        

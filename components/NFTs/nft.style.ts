@@ -14,7 +14,7 @@ export const NFTSectionStyles = makeStyles<Theme>((theme: Theme) => ({
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
-        '&:not(last-child)': {
+        '&:nth-child(-n+2)': {
             marginRight: '50px',
         },
         '& .title': {

@@ -25,6 +25,12 @@ export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
     padding: '13px 30px',
     flexShrink: 0,
     transition: 'ease-out 0.3s',
+    display: 'flex',
+    alignItems: 'center',
+    cursor: 'pointer',
+    '& > span': {
+      marginRight: '7px!important',
+    },
     '&:hover': {
       boxShadow: 'inset 0px -8px 0px #bfb615, inset 0px -30px 0px #eddd1c',
       background: '#fff989',

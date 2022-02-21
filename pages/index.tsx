@@ -2,18 +2,28 @@ import React from 'react';
 import Head from 'next/head';
 import { Header } from '../components/header/header';
 import { GlobalStyles } from '../styles/global.style';
+import { indexStyles } from '../styles/index.style';
 import { Banner } from '../components/banner/banner';
 import { Game } from '../components/unityGame/game';
 import { About } from '../components/about/about';
 import { Car } from '../components/carAnimation/car';
 import { NFTSection } from '../components/NFTs/nfts';
-
+import { Partners } from '../components/partners/partners';
+import Image from 'next/image';
+import { customLoader } from '../components/library/helpers';
+import grass from '../media/grass.png';
+import track from '../media/dirtTrack.png';
+import { Roadmap } from '../components/roadmap/roadmap';
+import bigGrass from '../media/bigGrass.png';
+import { Token } from '../components/token/token';
 interface Props {
 
 }
 
 const Home: React.FC<Props> = () => {
   const global = GlobalStyles();
+  const index = indexStyles();
+
 
   return (
     <>
@@ -34,16 +44,39 @@ const Home: React.FC<Props> = () => {
          
             <div className={global.wrapper}>
               <Banner />
-              <Game />
+              {/* <Game /> */}
               <About />
             </div>
             <Car />
-            <div style={{background: '#F3EB5A', width: '100%', justifyContent: 'center', display: 'flex'}}>
+            <div className={index.section}>
               <div className={global.wrapper}>
                 <NFTSection />
               </div>
             </div>
-          </div>
+            <div className={index.section} style={{background: '#98B92E'}}>
+              <div className={global.wrapper}>
+                <Token />
+              </div>
+            </div>
+            <div style={{background: '#435D1C'}} className={index.section}>
+              <div className={global.wrapper}>
+                <Partners />
+              </div>
+              <div className={index.grass}>
+                 <Image loader={customLoader} layout='fixed' src={grass} alt="play"/>
+              </div>
+            </div>
+
+            <div style={{backgroundImage: `url(${track.src})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} className={index.section}>
+              <div className={global.wrapper}>
+                <Roadmap />
+              </div>
+              <div className={index.grass}>
+                 <Image loader={customLoader} layout='fixed' src={bigGrass} alt="play"/>
+              </div>
+            </div>
+
+         </div>
       </div>
     </>
   )

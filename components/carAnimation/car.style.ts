@@ -1,9 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { Theme } from '@material-ui/core';
-
-import road from '../../media/Road-new.png'
-import tree from '../../media/tree.png';
-
+import road from '../../media/Road.png'
 
 export const CarStyles = makeStyles<Theme>((theme: Theme) => ({
 animation: {
@@ -13,11 +10,11 @@ animation: {
     backgroundPositionY: 'bottom',
     backgroundRepeatX: 'initial',
     width: '101%',
-    height: '620px',
+    height: '930px',
     position: 'relative',
     marginLeft: '-10px',
     marginBottom: '-100px',
-    marginTop: '-100px',
+    marginTop: '-450px',
 },
 car: {
     width: '370px',

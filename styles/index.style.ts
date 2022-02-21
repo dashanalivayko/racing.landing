@@ -1,0 +1,23 @@
+import { makeStyles } from '@material-ui/core/styles';
+import { Theme } from '@material-ui/core';
+
+
+export const indexStyles = makeStyles<Theme>((theme: Theme) => ({
+    grass: {
+        display: 'flex',
+        width: '100%',
+        height: '73px',
+    },
+    bigGrass: {
+
+    },
+    section: {
+        background: '#F3EB5A', 
+        width: '100%', 
+        justifyContent: 'center', 
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+    },
+}
+));
