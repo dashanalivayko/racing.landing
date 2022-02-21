@@ -59,7 +59,7 @@ const About: React.FC<Props> = ({}) => {
             Face the challenges of unique hill climbing environments<br/>
             with many different cars. Gain bonuses from daring tricks<br/>
             and collect coins to upgrade your car and reach even higher<br/>
-            distances. Watch out though - Bill's stout neck is not what<br/>
+            distances. Watch out though - Bill&#39;s stout neck is not what<br/>
             it used to be when he was a kid!
           </p>
           <DemoButton text={'watch'}>

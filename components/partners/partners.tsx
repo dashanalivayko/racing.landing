@@ -20,7 +20,7 @@ const Partners: React.FC<Props> = ({}) => {
     return (
         <div id="partners" className={styles.partners_section}>
             <div className={styles.investors}>
-                <div className={styles.title}>Investors and partners</div>
+                <div className={styles.title}>Investors &#38; partners</div>
                 <div className={styles.partners}>
                     <div className='photo'>
                        <Image src={logo1} loader={customLoader} alt='' />

@@ -41,7 +41,7 @@ const Roadmap: React.FC<Props> = ({}) => {
             </div>
 
             <div className={styles.whitepaper}>
-                <p className='title'>See our <a href={"https://docs.google.com/document/d/1PToRBirF1Wz76BGd0Lbjiu9MJeoOIBBgZUNQB5FpMfA/edit#heading=h.uu8b8n2rwtmo"} target="_blank">Whitepaper</a> for full details.</p>
+                <p className='title'>See our <a href={"https://docs.google.com/document/d/1PToRBirF1Wz76BGd0Lbjiu9MJeoOIBBgZUNQB5FpMfA/edit#heading=h.uu8b8n2rwtmo"} target="_blank" rel="noreferrer">Whitepaper</a> for full details.</p>
                 <p className='subtitle'>*Roadmap is subject to change depending on community feedback.</p>
             </div>
         </div>
