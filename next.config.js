@@ -64,7 +64,7 @@ module.exports = {
 const production = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  assetPrefix: production ? '/racing.landing/' : '',
+  // assetPrefix: production ? '/racing.landing/' : '',
   images: {
     loader: 'custom',
   },
