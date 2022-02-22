@@ -5,10 +5,10 @@ import poster from '../media/poster.png';
 import { fontFamily } from '../styles/theme';
 
 const unityContext = new UnityContext({
-  loaderUrl: 'unity/Build/TPR_proto_1.0.11.loader.js',
-  dataUrl: 'unity/Build/TPR_proto_1.0.11.data',
-  frameworkUrl: 'unity/Build/TPR_proto_1.0.11.framework.js',
-  codeUrl: 'unity/Build/TPR_proto_1.0.11.wasm',
+  loaderUrl: 'unity/Build/TPR_proto_1.0.14.loader.js',
+  dataUrl: 'unity/Build/TPR_proto_1.0.14.data',
+  frameworkUrl: 'unity/Build/TPR_proto_1.0.14.framework.js',
+  codeUrl: 'unity/Build/TPR_proto_1.0.1.wasm',
   webglContextAttributes: {
     preserveDrawingBuffer: true,
   },
@@ -19,19 +19,17 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: '100%',
     justifyContent: 'center',
-    alignItems: 'end',
     backgroundImage: `url(${poster.src})`,
-    // borderRadius: '20px',
     display: 'flex',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   },
   unityCanvas: {
+    // maxWidth: '100%',
+    // height: '100%',
     width: '100%',
     height: '100%',
-    // borderRadius: '20px',
-    // pointerEvents: 'all',
   },
   loading: {
     marginBottom: '70px',
@@ -75,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const LOADING_WIDTH = 500;
+let isBlackBackground = false;
 
 const UnityPage: React.FC = () => {
   const styles = useStyles();
@@ -83,8 +82,10 @@ const UnityPage: React.FC = () => {
 
   useEffect(() => {
     unityContext.on('progress', (progression) => setProgression(progression));
-    unityContext.on('loaded', () => setIsLoaded(true));
-    console.log(progression)
+    unityContext.on('loaded', () => {
+      setIsLoaded(true)
+      isBlackBackground = true;
+    })
   }, [progression]);
 
   const percent = Math.round(progression * 100);
@@ -98,7 +99,7 @@ const UnityPage: React.FC = () => {
         <p>Loading</p>
         <p>{percent}%</p>
         <div className={`${styles.loading} fill`} style={{width: `${width}px`}}>
-         <p style={{marginRight: '190px'}}>Loading</p>
+         <p style={{marginRight: '194px'}}>Loading</p>
          <p>{percent}%</p>
         </div>
       </div>}
