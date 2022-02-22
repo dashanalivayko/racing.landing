@@ -17,11 +17,9 @@ export const indexStyles = makeStyles<Theme>((theme: Theme) => ({
         flexDirection: 'column',
     },
     game: {
-        border: '10px solid #644200',
-        borderRadius: '30px',
-        width: '1080px',
-        height: '616px',
-        margin: '100px 0',
+        width: '100%',
+        height: '100%',
+        display:'flex',
     },
 }
 ));
