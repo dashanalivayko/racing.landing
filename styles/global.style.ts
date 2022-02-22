@@ -47,5 +47,23 @@ export const GlobalStyles = makeStyles(() => ({
         display: 'flex',
         width: '100%',
     },
+    grass: {
+        display: 'flex',
+        width: '100%',
+        height: '73px',
+    },
+    section: {
+        background: '#F3EB5A', 
+        width: '100%', 
+        justifyContent: 'center', 
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+    },
+    game: {
+        width: '100%',
+        height: '100%',
+        display:'flex',
+    },
   }
 ));

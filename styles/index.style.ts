@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Theme } from '@material-ui/core';
 
 
-export const indexStyles = makeStyles<Theme>((theme: Theme) => ({
+export const indexStyles = makeStyles(() => ({
     grass: {
         display: 'flex',
         width: '100%',

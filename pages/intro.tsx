@@ -20,9 +20,10 @@ import { Team } from '../components/team/team';
 import { Footer } from '../components/footer/footer';
 import { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const Home: React.FC = () => {
   const global = GlobalStyles();
-  const index = indexStyles();
+  const index = global;
+  //const index = indexStyles();
 
 
   return (

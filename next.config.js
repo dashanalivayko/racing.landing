@@ -61,20 +61,22 @@ module.exports = {
 };
 
 
-const production = process.env.NODE_ENV === 'production'
+// const production = process.env.NODE_ENV === 'production'
+const pageName = process.env.PAGE_NAME || '';
 
 module.exports = {
+  assetPrefix: pageName,
   // assetPrefix: production ? '/racing.landing/' : '',
   images: {
     loader: 'custom',
   },
-  // exportPathMap: async function (
-  //   defaultPathMap,
-  //   { dev, dir, outDir, distDir, buildId }
-  // ) {
-  //   return {
-  //     '/': { page: '/' },
-  //     '/game': { page: '/game' },
-  //   }
-  // },
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/intro': { page: '/intro' },
+      '/game': { page: '/game' },
+    }
+  },
 }
