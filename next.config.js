@@ -65,6 +65,7 @@ module.exports = {
 const pageName = process.env.PAGE_NAME || '';
 
 module.exports = {
+  basePath: pageName,
   assetPrefix: pageName,
   // assetPrefix: production ? '/racing.landing/' : '',
   images: {
