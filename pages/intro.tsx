@@ -46,7 +46,7 @@ const Home: React.FC = () => {
             <div id="top" className={global.wrapper}>
               <Banner />
             </div>
-            <div className={global.wrapper} id="video">
+            <div className={global.wrapper} id="about">
               <About />
             </div>
             <div className={index.section} style={{background: '#98B92E'}} id="gameplay" >

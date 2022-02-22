@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         </div>
         <div className={styles.navbar}>
          <div>
-            <a href="#video">VIDEO</a>
+            <a href="#about">VIDEO</a>
             <a href="#gameplay">GAMEPLAY</a>
             <a href="#nft">NFT</a>
             <a href="#token">TOKEN</a>

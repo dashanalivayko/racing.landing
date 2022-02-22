@@ -20,8 +20,11 @@ const About: React.FC<Props> = ({}) => {
   const handlePlayedClick = () => {
     //@ts-ignore
     const video: HTMLVideoElement | null = document.getElementById('video');
-    played ? video.pause() : video.play();
-    setPlayed(!played);
+    if (video) {
+      played ? video.pause() : video.play();
+      setPlayed(!played);
+    }
+
     console.log(video)
   };
 

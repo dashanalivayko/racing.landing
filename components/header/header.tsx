@@ -14,7 +14,7 @@ const Header: React.FC = () => {
           <Image unoptimized  loader={customLoader} src={logo} alt="logo"/>
         </a>
         <div className={styles.navbar}>
-          <a href="#video">VIDEO</a>
+          <a href="#about">VIDEO</a>
           <a href="#gameplay">GAMEPLAY</a>
           <a href="#nft">NFT</a>
           <a href="#token">TOKEN</a>

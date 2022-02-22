@@ -30,6 +30,7 @@ export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',
+    zIndex: 1,
     '& > span': {
       marginRight: '7px!important',
     },

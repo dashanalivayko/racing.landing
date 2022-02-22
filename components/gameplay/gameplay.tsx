@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { customLoader } from '../library/helpers';
 import { DemoButton } from '../buttons/demoButton';
 import playButton from '../../media/playButton.png';
+import { VideoButton } from '../buttons/videoButton';
 
 
 
@@ -26,9 +27,9 @@ const Gameplay: React.FC<Props> = ({}) => {
             distances. Watch out though - Bill&#39;s stout neck is not what<br/>
             it used to be when he was a kid!
           </p>
-          <DemoButton text={'watch'}>
-            <Image unoptimized  src={playButton} alt='' loader={customLoader}/>
-          </DemoButton>
+          <VideoButton text={'watch'}>
+            {/* <Image unoptimized  src={playButton} alt='' loader={customLoader}/> */}
+          </VideoButton>
           <p className='subtitle' style={{marginBottom: '60px', marginTop: '18px'}}>And his good old gasoline crematorium will easily run out of fuel.</p>
         </div>
       </div>
