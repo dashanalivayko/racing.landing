@@ -27,7 +27,7 @@ const Gameplay: React.FC<Props> = ({}) => {
             it used to be when he was a kid!
           </p>
           <DemoButton text={'watch'}>
-            <Image src={playButton} alt='' loader={customLoader}/>
+            <Image unoptimized  src={playButton} alt='' loader={customLoader}/>
           </DemoButton>
           <p className='subtitle' style={{marginBottom: '60px', marginTop: '18px'}}>And his good old gasoline crematorium will easily run out of fuel.</p>
         </div>

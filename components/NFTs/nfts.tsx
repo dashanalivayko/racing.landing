@@ -18,7 +18,7 @@ const NFTSection: React.FC<Props> = ({}) => {
             <div className={styles.nft}>
                 <p className={'title'}>5555 Unique NFTS</p>
                 <div className='img'>
-                  <Image loader={customLoader} layout='fill' src={Characters.src} alt="characters"/>
+                  <Image unoptimized  loader={customLoader} layout='fill' src={Characters.src} alt="characters"/>
                 </div>
                 <p className={'subtitle'}><b>Redneck NFT</b> collection on the Solana Blockhain</p>
             </div>
@@ -26,7 +26,7 @@ const NFTSection: React.FC<Props> = ({}) => {
             <div className={styles.nft}>
                 <p className={'title'}>And their cars</p>
                 <div className='img'>
-                  <Image loader={customLoader} layout='fill' src={Cars.src} alt="cars"/>
+                  <Image unoptimized  loader={customLoader} layout='fill' src={Cars.src} alt="cars"/>
                 </div>
                 <p className={'subtitle'}>Holders get <b>free airdrops</b> to ride their cars</p>
             </div>
@@ -34,7 +34,7 @@ const NFTSection: React.FC<Props> = ({}) => {
             <div className={styles.nft}>
                 <p className={'title'}>Go to Race</p>
                 <div className='img'>
-                  <Image loader={customLoader} layout='fill' src={Race.src} alt="race"/>
+                  <Image unoptimized  loader={customLoader} layout='fill' src={Race.src} alt="race"/>
                 </div>
                 <p className={'subtitle'}><b>Play to Earn</b> in the PVP arena</p>
             </div>

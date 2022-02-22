@@ -18,11 +18,9 @@ import { Token } from '../components/token/token';
 import { Gameplay } from '../components/gameplay/gameplay';
 import { Team } from '../components/team/team';
 import { Footer } from '../components/footer/footer';
-interface Props {
+import { NextPage } from 'next';
 
-}
-
-const Home: React.FC<Props> = () => {
+const Home: NextPage = () => {
   const global = GlobalStyles();
   const index = indexStyles();
 
@@ -73,7 +71,7 @@ const Home: React.FC<Props> = () => {
                 <Team />
               </div>
               <div className={index.grass}>
-                 <Image loader={customLoader} layout='fixed' src={grass} alt="play"/>
+                 <Image unoptimized  loader={customLoader} layout='fixed' src={grass} alt="play"/>
               </div>
             </div>
 
@@ -82,7 +80,7 @@ const Home: React.FC<Props> = () => {
                 <Roadmap />
               </div>
               <div className={index.grass}>
-                 <Image loader={customLoader} layout='fixed' src={bigGrass} alt="play"/>
+                 <Image unoptimized  loader={customLoader} layout='fixed' src={bigGrass} alt="play"/>
               </div>
             </div>
 

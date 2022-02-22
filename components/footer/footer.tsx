@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
       <nav className={styles.footer} role="navigation">
           <div>
             <a href="#top" className={styles.logo}>
-            <Image loader={customLoader} src={logo} alt="logo"/>
+            <Image unoptimized  loader={customLoader} src={logo} alt="logo"/>
             </a>
             <p>©copyright 2021</p>
         </div>

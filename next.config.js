@@ -9,7 +9,7 @@ module.exports = {
 }
 
 const withImages = require('next-images')
-//const withOptimizedImages = require('next-optimized-images');
+const withOptimizedImages = require('next-optimized-images');
 module.exports = withImages({
   fileExtensions: ["jpg", "jpeg", "png", "gif", "svg"],
   esModule: true,
@@ -17,21 +17,21 @@ module.exports = withImages({
     return config
   },
 })
-/*module.exports = withOptimizedImages({
+module.exports = withOptimizedImages({
   handleImages: ["jpg", "jpeg", "png", "gif", "svg"],
   imagesFolder: 'media',
-})*/
+})
 
-// const withVideos = require('next-videos')
-// module.exports = withVideos(
-//   {
-//     fileExtensions: ["mp4"],
-//     esModule: true,
-//     webpack(config, options) {
-//       return config
-//     }
-//   }
-// )
+const withVideos = require('next-videos')
+module.exports = withVideos(
+  {
+    fileExtensions: ["mp4"],
+    esModule: true,
+    webpack(config, options) {
+      return config
+    }
+  }
+)
 
 
 module.exports = {

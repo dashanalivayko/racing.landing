@@ -16,7 +16,7 @@ const Car: React.FC<Props> = ({}) => {
     return (
     <div className={styles.animation}>
       {/* <div className={styles.car}>
-        <Image loader={customLoader} layout='fill' src={car} alt="car"/>
+        <Image unoptimized  loader={customLoader} layout='fill' src={car} alt="car"/>
       </div> */}
     </div>
     );

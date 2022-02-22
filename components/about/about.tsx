@@ -16,13 +16,13 @@ const About: React.FC<Props> = ({}) => {
   const styles = AboutStyles();
 
   const [played, setPlayed] = React.useState(false);
-  console.log(played)
 
   const handlePlayedClick = () => {
     //@ts-ignore
     const video: HTMLVideoElement | null = document.getElementById('video');
     played ? video.pause() : video.play();
     setPlayed(!played);
+    console.log(video)
   };
 
   const onEndedCallback = () => setPlayed(!played);
@@ -41,7 +41,7 @@ const About: React.FC<Props> = ({}) => {
         </div>
         <div className={styles.video}>
           <div className='img' style={{visibility: played ? 'hidden' : 'visible'}} onClick={handlePlayedClick}>
-            <Image loader={customLoader} layout='fill' src={play.src} alt="play"/>
+            <Image unoptimized  loader={customLoader} layout='fill' src={play.src} alt="play"/>
           </div>
           <div style={{visibility: played ? 'hidden' : 'visible'}} />
           <video id="video" autoPlay onClick={handlePlayedClick} onEnded={onEndedCallback}>
@@ -49,22 +49,6 @@ const About: React.FC<Props> = ({}) => {
           </video>
         </div>
        </div>
-
-        {/* <p className='title'>Gameplay</p>
-        <p className='subtitle' style={{marginBottom: '60px'}}>Race your way up hill in this physics based driving game!</p>
-        <div style={{display: 'flex', flexDirection: 'column', marginLeft: 'auto', alignItems: 'center', width: '640px'}}>
-          <p className='subtitle' style={{marginBottom: '23px'}}>
-            Face the challenges of unique hill climbing environments<br/>
-            with many different cars. Gain bonuses from daring tricks<br/>
-            and collect coins to upgrade your car and reach even higher<br/>
-            distances. Watch out though - Bill&#39;s stout neck is not what<br/>
-            it used to be when he was a kid!
-          </p>
-          <DemoButton text={'watch'}>
-            <Image src={playButton} alt='' loader={customLoader}/>
-          </DemoButton>
-          <p className='subtitle' style={{marginBottom: '60px', marginTop: '18px'}}>And his good old gasoline crematorium will easily run out of fuel.</p>
-        </div> */}
     </div>
     );
   };

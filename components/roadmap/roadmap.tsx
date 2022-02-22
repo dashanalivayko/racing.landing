@@ -1,5 +1,6 @@
 import { RoadmapStyles } from './roadmap.style';
 import React from 'react';
+import Link from 'next/link';
 
 interface Props {
 }
@@ -25,7 +26,9 @@ const Roadmap: React.FC<Props> = ({}) => {
                     <p className='title'>Checkpoint 2 Q2 2022</p>
                     <p className='subtitle'>Airdrop the first cars to NFT holders</p>
                     <p className='subtitle'>Cars rarity chart</p>
-                    <a className='subtitle' style={{color: '#435D1C', fontWeight: '800', cursor: 'pointer'}}>Playable demo</a>
+                    <Link href="/game">
+                      <a className='subtitle' style={{color: '#435D1C', fontWeight: '800', cursor: 'pointer'}} target="_blank">Playable demo</a>
+                    </Link>
                 </div>
 
                 <div className='checkpoint' style={{alignSelf: 'flex-start'}}>

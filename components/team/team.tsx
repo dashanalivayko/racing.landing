@@ -20,13 +20,13 @@ const Team: React.FC<Props> = ({}) => {
 
                 <div style={{display:'flex', justifyContent: 'center'}}> 
                     <div className={styles.person} style={{marginRight:'50px'}}>
-                        <Image className='photo' src={Igor} loader={customLoader} alt=''></Image>
+                        <Image unoptimized  className='photo' src={Igor} loader={customLoader} alt=''></Image>
                         <div className='name'>Crazy Igor</div>
                         <div className='position'>CEO</div>
                     </div>
 
                     <div className={styles.person}>
-                        <Image className='photo' src={Egor} loader={customLoader} alt=''></Image>
+                        <Image unoptimized  className='photo' src={Egor} loader={customLoader} alt=''></Image>
                         <div className='name'>Stoner Egor</div>
                         <div className='position'>CTO</div>
                     </div>

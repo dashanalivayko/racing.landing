@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     return (
       <nav className={styles.header} role="navigation">
         <a href="#top" className={styles.logo}>
-          <Image loader={customLoader} src={logo} alt="logo"/>
+          <Image unoptimized  loader={customLoader} src={logo} alt="logo"/>
         </a>
         <div className={styles.navbar}>
           <a href="#video">VIDEO</a>

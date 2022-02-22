@@ -21,7 +21,7 @@ const Token: React.FC<Props> = ({}) => {
                 to participate in key governance votes, have exclusive access to NFT drops
                 and be the first to try the new features.</div>
             <div className='coin'>
-                <Image loader={customLoader} src={token} alt=''/>
+                <Image unoptimized  loader={customLoader} src={token} alt=''/>
             </div>
         </div>
     );
