@@ -8,7 +8,7 @@ const unityContext = new UnityContext({
   loaderUrl: 'unity/Build/TPR_proto_1.0.14.loader.js',
   dataUrl: 'unity/Build/TPR_proto_1.0.14.data',
   frameworkUrl: 'unity/Build/TPR_proto_1.0.14.framework.js',
-  codeUrl: 'unity/Build/TPR_proto_1.0.1.wasm',
+  codeUrl: 'unity/Build/TPR_proto_1.0.14.wasm',
   webglContextAttributes: {
     preserveDrawingBuffer: true,
   },
