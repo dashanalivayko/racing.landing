@@ -70,14 +70,14 @@ module.exports = {
   },
 }
 
-// module.exports = {
-//   exportPathMap: async function (
-//     defaultPathMap,
-//     { dev, dir, outDir, distDir, buildId }
-//   ) {
-//     return {
-//       '/': { page: '/' },
-//       '/game': { page: '/game' },
-//     }
-//   },
-// }
+module.exports = {
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/game': { page: '/game' },
+    }
+  },
+}
