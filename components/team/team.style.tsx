@@ -1,15 +1,15 @@
 import { fontFamily } from './../../styles/theme';
 import { makeStyles } from '@material-ui/core/styles';
 import { Theme } from '@material-ui/core';
-import grass from '../../media/grass.png';
 
-export const partnersStyles = makeStyles<Theme>((theme: Theme) => ({
-    partners_section: {
+export const teamStyles = makeStyles<Theme>((theme: Theme) => ({
+    team_section: {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        padding: '150px 0px 0px',
+        padding: '135px 0px 100px',
+        // marginTop: '135px',
     },
 
     partners: {

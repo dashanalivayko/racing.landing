@@ -7,7 +7,7 @@ export const AboutStyles = makeStyles<Theme>((theme: Theme) => ({
     about_section: {
         display: 'flex',
         flexDirection: 'column',
-        marginTop: '80px',
+        marginTop: '130px',
         position: 'relative',
         alignItems: 'center',
         '& .title': {

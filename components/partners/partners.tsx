@@ -39,7 +39,7 @@ const Partners: React.FC<Props> = ({}) => {
                     </div>
                 </div>
             </div>
-            <div id="team" className={styles.founders}>
+            {/* <div id="team" className={styles.founders}>
                 <div className={styles.title}>Founders</div>
                 <div className='subtitle'>Hillbilly Racing is developed by an international team of professional game developers baked by top VCs.</div>
 
@@ -56,7 +56,7 @@ const Partners: React.FC<Props> = ({}) => {
                         <div className='position'>CTO</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
   };

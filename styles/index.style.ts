@@ -8,9 +8,6 @@ export const indexStyles = makeStyles<Theme>((theme: Theme) => ({
         width: '100%',
         height: '73px',
     },
-    bigGrass: {
-
-    },
     section: {
         background: '#F3EB5A', 
         width: '100%', 
@@ -18,6 +15,13 @@ export const indexStyles = makeStyles<Theme>((theme: Theme) => ({
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
+    },
+    game: {
+        border: '10px solid #644200',
+        borderRadius: '30px',
+        width: '1080px',
+        height: '616px',
+        margin: '100px 0',
     },
 }
 ));

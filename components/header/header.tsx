@@ -21,7 +21,7 @@ const Header: React.FC = () => {
           <a href="#partners">PARTNERS</a>
           <a href="#team">TEAM</a>
           <a href="#roadmap">ROADMAP</a>
-          <a href="https://docs.google.com/document/d/1PToRBirF1Wz76BGd0Lbjiu9MJeoOIBBgZUNQB5FpMfA/edit#heading=h.uu8b8n2rwtmo" target="_blank" rel="noreferrer">WHITEPAPER</a>
+          <a href="#">WHITEPAPER</a>
 
         </div>
         <div className={styles.buttons}>

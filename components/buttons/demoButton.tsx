@@ -8,7 +8,7 @@ interface Props {
 const DemoButton: React.FC<Props> = ({text, children}) => {
   const styles = ButtonsStyles();
     return (
-      <a href="#game">
+      <a href="/game">
         <button className={styles.playButton}>
             {children}
             {text}

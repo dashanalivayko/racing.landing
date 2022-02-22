@@ -4,7 +4,6 @@ import { Header } from '../components/header/header';
 import { GlobalStyles } from '../styles/global.style';
 import { indexStyles } from '../styles/index.style';
 import { Banner } from '../components/banner/banner';
-import { Game } from '../components/unityGame/game';
 import { About } from '../components/about/about';
 import { Car } from '../components/carAnimation/car';
 import { NFTSection } from '../components/NFTs/nfts';
@@ -16,6 +15,8 @@ import track from '../media/dirtTrack.png';
 import { Roadmap } from '../components/roadmap/roadmap';
 import bigGrass from '../media/bigGrass.png';
 import { Token } from '../components/token/token';
+import { Gameplay } from '../components/gameplay/gameplay';
+import { Team } from '../components/team/team';
 interface Props {
 
 }
@@ -44,11 +45,17 @@ const Home: React.FC<Props> = () => {
          
             <div className={global.wrapper}>
               <Banner />
-              {/* <Game /> */}
+            </div>
+            <div className={global.wrapper} id="video">
               <About />
             </div>
+            <div className={index.section} style={{background: '#98B92E'}} id="gameplay" >
+              <div className={global.wrapper}>
+                <Gameplay />
+              </div>
+            </div>
             <Car />
-            <div className={index.section}>
+            <div className={index.section} id="nft" >
               <div className={global.wrapper}>
                 <NFTSection />
               </div>
@@ -58,16 +65,18 @@ const Home: React.FC<Props> = () => {
                 <Token />
               </div>
             </div>
+            
             <div style={{background: '#435D1C'}} className={index.section}>
-              <div className={global.wrapper}>
+              <div className={global.wrapper} >
                 <Partners />
+                <Team />
               </div>
               <div className={index.grass}>
                  <Image loader={customLoader} layout='fixed' src={grass} alt="play"/>
               </div>
             </div>
 
-            <div style={{backgroundImage: `url(${track.src})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} className={index.section}>
+            <div id="roadmap" style={{backgroundImage: `url(${track.src})`, backgroundSize: '100% auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} className={index.section}>
               <div className={global.wrapper}>
                 <Roadmap />
               </div>

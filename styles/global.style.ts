@@ -45,7 +45,7 @@ export const GlobalStyles = makeStyles(() => ({
         justifyContent: 'center',
         flexDirection: 'column',
         display: 'flex',
-       
+        width: '100%',
     },
   }
 ));

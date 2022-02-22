@@ -32,7 +32,7 @@ export const NFTSectionStyles = makeStyles<Theme>((theme: Theme) => ({
         '& .subtitle': {
             fontFamily: fontFamily,
             fontStyle: 'normal',
-            fontWeight: 800,
+            fontWeight: 400,
             fontSize:'24px',
             lineHeight: '32px',
             marginTop: '20px',

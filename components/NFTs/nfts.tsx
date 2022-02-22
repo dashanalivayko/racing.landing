@@ -10,7 +10,7 @@ const NFTSection: React.FC<Props> = ({}) => {
   const styles = NFTSectionStyles();
 
     return (
-        <div id="nft" className={styles.nft_section}>
+        <div className={styles.nft_section}>
             <div className={styles.nft}>
                 <p className={'title'}>5555 Unique NFTS</p>
                 <div className='img'>

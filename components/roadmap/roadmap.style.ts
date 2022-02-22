@@ -5,7 +5,7 @@ import { Theme } from '@material-ui/core';
 
 export const RoadmapStyles = makeStyles<Theme>((theme: Theme) => ({
     roadmap_section: {
-        paddingTop: '65px',
+        paddingTop: '110px',
         '& > .title': {
             fontFamily: fontFamily,
             fontStyle: 'normal',
@@ -20,7 +20,7 @@ export const RoadmapStyles = makeStyles<Theme>((theme: Theme) => ({
             fontFamily: fontFamily,
             fontStyle: 'normal',
             fontWeight: 400,
-            fontSize: '24px',
+            fontSize: '23px',
             lineHeight: '32px',
             color: '#000000',
             textAlign: 'center',
@@ -82,7 +82,7 @@ export const RoadmapStyles = makeStyles<Theme>((theme: Theme) => ({
             color: '#000000',
             textAlign: 'start',
             marginBottom: '4px',
-            '& > a': {
+            '& > span': {
                 color: '#435D1C',
                 fontWeight: 800,
             },

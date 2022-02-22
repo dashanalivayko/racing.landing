@@ -7,7 +7,7 @@ import banner from '../../media/banner.png';
 
 export const BannerStyles = makeStyles<Theme>((theme: Theme) => ({
 banner: {
-    margin: '450px auto 50px',
+    margin: '450px auto 0px',
     backgroundImage: `url(${banner.src})`,
     padding: '80px 105px',
     borderRadius: '30px',

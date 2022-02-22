@@ -8,10 +8,10 @@ const Roadmap: React.FC<Props> = ({}) => {
   const styles = RoadmapStyles();
 
     return (
-        <div id="roadmap" className={styles.roadmap_section}>
+        <div className={styles.roadmap_section}>
             <p className='title'>Roadmap</p>
             <p className='subtitle'>
-                Our roadmap is designed to have the game development as highest priority in mind. We want to bring value to the <br/>
+                Our roadmap is designed to have the game development as highest priority in mind. We want to bring value to the
                 community by starting development of the game as early as possible.
             </p>
             <div className={styles.checkpoints}>
@@ -35,13 +35,13 @@ const Roadmap: React.FC<Props> = ({}) => {
 
                 <div className='checkpoint' style={{alignSelf: 'flex-end'}}>
                     <p className='title'>Checkpoint 4 Q4 2022</p>
-                    <p className='subtitle'>IDO $HBR token.</p>
+                    <p className='subtitle'>IDO $CORN token.</p>
                     <p className='subtitle'>Launch of liquidity and staking pools</p>
                 </div>
             </div>
 
             <div className={styles.whitepaper}>
-                <p className='title'>See our <a href={"https://docs.google.com/document/d/1PToRBirF1Wz76BGd0Lbjiu9MJeoOIBBgZUNQB5FpMfA/edit#heading=h.uu8b8n2rwtmo"} target="_blank" rel="noreferrer">Whitepaper</a> for full details.</p>
+                <p className='title'>See our <span>Whitepaper</span> for full details.</p>
                 <p className='subtitle'>*Roadmap is subject to change depending on community feedback.</p>
             </div>
         </div>

@@ -4,8 +4,6 @@ import { DiscordButton, TwitterButton } from '../buttons/socialButtons';
 import play from '../../media/Play.png';
 import Image from 'next/image';
 import { customLoader } from '../library/helpers';
-// import video from '../../public/Video.mp4';
-import tree from '../../media/tree.png';
 import { DemoButton } from '../buttons/demoButton';
 import playButton from '../../media/playButton.png';
 
@@ -31,7 +29,7 @@ const About: React.FC<Props> = ({}) => {
 
     return (
      <div className={styles.about_section}>
-       <div id="video" style={{display: 'flex', marginBottom: '110px'}}>
+       <div style={{display: 'flex'}}>
         <div className={styles.about}>
         <p className={'title'}>hillbilly racing <br/>IS A SOLANA NFT GAMING PROJECT</p>
         <p className={'subtitle'}><b>Redneck Racing</b> is a Solana NFT gaming project where players can own all of their in-game assets and use them for PvP racing competision. The game is built to play directly in <b>mobile and desktop browsers</b></p>
@@ -52,7 +50,7 @@ const About: React.FC<Props> = ({}) => {
         </div>
        </div>
 
-        <p id="gameplay" className='title'>Gameplay</p>
+        {/* <p className='title'>Gameplay</p>
         <p className='subtitle' style={{marginBottom: '60px'}}>Race your way up hill in this physics based driving game!</p>
         <div style={{display: 'flex', flexDirection: 'column', marginLeft: 'auto', alignItems: 'center', width: '640px'}}>
           <p className='subtitle' style={{marginBottom: '23px'}}>
@@ -66,7 +64,7 @@ const About: React.FC<Props> = ({}) => {
             <Image src={playButton} alt='' loader={customLoader}/>
           </DemoButton>
           <p className='subtitle' style={{marginBottom: '60px', marginTop: '18px'}}>And his good old gasoline crematorium will easily run out of fuel.</p>
-        </div>
+        </div> */}
     </div>
     );
   };

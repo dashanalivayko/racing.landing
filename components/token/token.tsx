@@ -13,12 +13,12 @@ const Token: React.FC<Props> = ({}) => {
 
     return (
         <div id="token" className={styles.token_section}>
-            <div className='title'>Investors and partners</div>
+            <div className='title'>MEET THE CORN token</div>
             <div className='subtitle'>
-                Corntoken ($CORN) is an Solana token used to perform many actions within<br/>
-                the Hillbilly Racing metaverse. Actions such as: purchasing and selling equipment<br/>
-                and crafting new items. Additionally, the $CORN holders will eventually be able<br/>
-                to participate in key governance votes, have exclusive access to NFT drops<br/>
+                Corntoken ($CORN) is an Solana token used to perform many actions within
+                the Hillbilly Racing metaverse. Actions such as: purchasing and selling equipment
+                and crafting new items. Additionally, the $CORN holders will eventually be able
+                to participate in key governance votes, have exclusive access to NFT drops
                 and be the first to try the new features.</div>
             <div className='coin'>
                 <Image loader={customLoader} src={token} alt=''/>
