@@ -61,9 +61,11 @@ module.exports = {
 };
 
 
-const production = process.env.NODE_ENV === 'production'
+// const production = process.env.NODE_ENV === 'production'
+const pageName = process.env.PAGE_NAME || '';
 
 module.exports = {
+  assetPrefix: pageName,
   // assetPrefix: production ? '/racing.landing/' : '',
   images: {
     loader: 'custom',
