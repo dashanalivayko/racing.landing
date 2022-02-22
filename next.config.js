@@ -60,11 +60,24 @@ module.exports = {
   }
 };
 
+
 const production = process.env.NODE_ENV === 'production'
 
 module.exports = {
   assetPrefix: production ? '/racing.landing/' : '',
   images: {
     loader: 'custom',
+  },
+}
+
+module.exports = {
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/game': { page: '/game' },
+    }
   },
 }
