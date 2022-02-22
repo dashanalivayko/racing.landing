@@ -75,7 +75,7 @@ module.exports = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      '/intro': { page: '/' },
+      '/intro': { page: '/intro' },
       '/game': { page: '/game' },
     }
   },
