@@ -21,14 +21,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'end',
     backgroundImage: `url(${poster.src})`,
-    borderRadius: '20px',
+    // borderRadius: '20px',
     display: 'flex',
     backgroundPosition: 'center',
   },
   unityCanvas: {
     width: '100%',
     height: '100%',
-    borderRadius: '20px',
+    // borderRadius: '20px',
     // pointerEvents: 'all',
   },
   loading: {
