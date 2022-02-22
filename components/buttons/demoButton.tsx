@@ -1,5 +1,6 @@
 import { ButtonsStyles } from './buttons.style';
 import React from 'react';
+import Link from 'next/link';
 
 interface Props {
     text: string;
@@ -8,12 +9,12 @@ interface Props {
 const DemoButton: React.FC<Props> = ({text, children}) => {
   const styles = ButtonsStyles();
     return (
-      <a href="/game">
-        <button className={styles.playButton}>
+      <Link href="/game">
+        <a className={styles.playButton}>
             {children}
             {text}
-        </button>
-      </a>
+        </a>
+      </Link>
     );
   };
   
