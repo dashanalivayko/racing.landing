@@ -7,7 +7,7 @@ const Game: React.FC = () => {
 
     return (
     <div className={styles.game}>
-      <UnityPage />
+      {/* <UnityPage /> */}
     </div>
     );
   };

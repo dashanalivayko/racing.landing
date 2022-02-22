@@ -10,7 +10,7 @@ const DemoButton: React.FC<Props> = ({text, children}) => {
   const styles = ButtonsStyles();
     return (
       <Link href="/game">
-        <a className={styles.playButton}>
+        <a className={styles.playButton} target="_blank">
             {children}
             {text}
         </a>

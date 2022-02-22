@@ -17,6 +17,7 @@ import bigGrass from '/media/bigGrass.png';
 import { Token } from '../components/token/token';
 import { Gameplay } from '../components/gameplay/gameplay';
 import { Team } from '../components/team/team';
+import { Footer } from '../components/footer/footer';
 interface Props {
 
 }
@@ -43,7 +44,7 @@ const Home: React.FC<Props> = () => {
          <div className={global.main}>
          <Header/>
          
-            <div className={global.wrapper}>
+            <div id="top" className={global.wrapper}>
               <Banner />
             </div>
             <div className={global.wrapper} id="video">
@@ -84,6 +85,8 @@ const Home: React.FC<Props> = () => {
                  <Image loader={customLoader} layout='fixed' src={bigGrass} alt="play"/>
               </div>
             </div>
+
+            <Footer />
 
          </div>
       </div>
