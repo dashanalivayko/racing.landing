@@ -47,3 +47,7 @@ button {
 * {
   box-sizing: border-box;
 }
+
+#__next {
+	height: 100%;
+}

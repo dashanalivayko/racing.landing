@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
 
         </div>
         <div className={styles.buttons}>
-          <TwitterButton/>
-          <DiscordButton />
+          <TwitterButton isWhite={true}/>
+          <DiscordButton isWhite={true}/>
         </div>
       </nav>
     );

@@ -24,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
     // borderRadius: '20px',
     display: 'flex',
     backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
   },
   unityCanvas: {
     width: '100%',
@@ -92,7 +94,7 @@ const UnityPage: React.FC = () => {
     <div className={styles.root}>
       {
       !isLoaded &&
-      <div className={styles.loading} style={{position: 'absolute'}}>
+      <div className={styles.loading} style={{position: 'absolute', bottom: 0}}>
         <p>Loading</p>
         <p>{percent}%</p>
         <div className={`${styles.loading} fill`} style={{width: `${width}px`}}>

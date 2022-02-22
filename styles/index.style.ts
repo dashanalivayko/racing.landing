@@ -16,6 +16,13 @@ export const indexStyles = makeStyles<Theme>((theme: Theme) => ({
         alignItems: 'center',
         flexDirection: 'column',
     },
+    rootGame: {
+        justifyContent: 'center', 
+        display: 'flex',
+        alignItems: 'center',
+        height: '100%',
+        background: 'black',
+    },
     game: {
         width: '100%',
         height: '100%',

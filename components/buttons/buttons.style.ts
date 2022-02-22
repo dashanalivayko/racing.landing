@@ -4,6 +4,8 @@ import { Theme } from '@material-ui/core';
 
 import twitter from '../../media/social-twitter.svg';
 import discord from '../../media/social-discord.svg';
+import twitter_white from '../../media/twitter-white.png';
+import discord_white from '../../media/discord-white.png';
 
 export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
   playButton: {
@@ -42,15 +44,22 @@ export const ButtonsStyles = makeStyles<Theme>((theme: Theme) => ({
       width: '35px',
       height: '35px',
       backgroundRepeat: 'no-repeat',
+      backgroundSize: 'contain',
     '&:hover': {
         background: '#F3EB5A',
         borderRadius: '5px',
     },
     '&.discord': {
-        backgroundImage: `url(${discord.src}) !important`,
+      backgroundImage: `url(${discord.src}) !important`,
+    },
+    '&.discord-white': {
+      backgroundImage: `url(${discord_white.src}) !important`,
     },
     '&.twitter': {
-        backgroundImage: `url(${twitter.src}) !important`,
-      },
+      backgroundImage: `url(${twitter.src}) !important`,
+    },
+    '&.twitter-white': {
+      backgroundImage: `url(${twitter_white.src}) !important`,
+    },
   }
 }));
