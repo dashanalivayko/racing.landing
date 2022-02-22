@@ -68,13 +68,13 @@ module.exports = {
   images: {
     loader: 'custom',
   },
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' },
-      '/game': { page: '/game' },
-    }
-  },
+  // exportPathMap: async function (
+  //   defaultPathMap,
+  //   { dev, dir, outDir, distDir, buildId }
+  // ) {
+  //   return {
+  //     '/': { page: '/' },
+  //     '/game': { page: '/game' },
+  //   }
+  // },
 }
