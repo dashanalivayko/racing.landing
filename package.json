@@ -5,9 +5,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export -o docs",
+    "export": "next export",
+    "export-docs": "next export -o docs",
     "lint": "next lint",
-    "prod": "PAGE_NAME='/racing.landing' npm run build && npm run export && touch ./docs/.nojekyll"
+    "prod": "PAGE_NAME='/racing.landing' npm run build && npm run export-docs && touch ./docs/.nojekyll"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",

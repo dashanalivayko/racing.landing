@@ -26,7 +26,7 @@ jobs:
         run: npm ci
 
       - name: Build my App
-        run: PAGE_NAME='/racing.landing' npm run build && npm run export && touch ./out/.nojekyll
+        run: PAGE_NAME='' npm run build && npm run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
