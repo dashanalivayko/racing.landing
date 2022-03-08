@@ -9,11 +9,12 @@ interface Props {
 const DemoButton: React.FC<Props> = ({text, children}) => {
   const styles = ButtonsStyles();
     return (
-
-        <a className={styles.playButton} target="_blank" href="https://funnchatcompany.github.io/racing.game/">
+      <Link href="https://funnchatcompany.github.io/racing.game/">
+        <a className={styles.playButton} target="_blank">
             {children}
             {text}
         </a>
+      </Link>
     );
   };
   
