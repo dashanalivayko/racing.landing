@@ -71,12 +71,12 @@ module.exports = {
   images: {
     loader: 'custom',
   },
-  exportPathMap: async function (
+  /*exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
       '/index': { page: '/' },
     }
-  },
+  },*/
 }
